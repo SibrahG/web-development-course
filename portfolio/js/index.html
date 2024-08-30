@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Animation</title>
+    <!-- Include the typed.js library from a CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <style>
+        .typing {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- The element where the typing animation will appear -->
+    <div class="typing"></div>
+
+    <script>
+        // Initialize the typing animation
+        var typed = new Typed(".typing", {
+            strings: ["", "web designer", "web developer", "Youtuber"],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true
+        });
+    </script>
+
+</body>
+</html>

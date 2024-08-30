@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         ### Game Logic
+
+// 1. Generate a random number between 1 and 100. 
+// 2. Prompt the player to guess the number.
+// 3. Compare the player's guess to the random number.
+// 4. Provide feedback ("too high", "too low", or "correct").
+// 5. Repeat steps 2-4 until the player guesses correctly.
+        //generating a random number
+        let random_num=Math.floor( Math.random())*100 +1;
+       // math.ranoom(0,1) 0.0024*100=0.24 +1= 1.24
+
+        //. Prompt the player to guess the number.
+         let guess_num = prompt("enter your guess number between 1-100")
+      
+        
+        //if-else
+        if(random_num==guess_num){
+            alert("congratulations.You guessed the right number and the number is:" + random_num);
+            //ma
+        }
+        else if(guess_num>random_num){
+            alert("TOO High and the number is: " + random_num)
+            console.log(random_num);
+        }
+        else if(random_num<guess_num){
+            alert("too Low and the number is: " + random_num)
+            
+        }
+        else(alert("invalid"))
+    </script>
+</body>
+</html>
